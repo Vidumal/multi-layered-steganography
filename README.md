@@ -62,3 +62,7 @@ A major technical challenge addressed was Bit-Drifting. Standard image saving of
 * Channel Locking: The tool forces a 3-channel RGB color space to bypass Alpha/Transparency issues.
 * Lossless Preservation: By disabling PNG optimization (optimize=False) and using direct byte-list mapping, the tool maintains 100% data integrity.
 * Integrity Verification: Unlike basic LSB scripts, the use of AES-GCM allows the tool to verify an internal authentication tag. If the image is altered or the key is wrong, the tool identifies the integrity failure rather than displaying garbled data.
+
+
+## ⚖️ License
+This project is licensed under the MIT License. It is intended for **educational and research purposes only.**
