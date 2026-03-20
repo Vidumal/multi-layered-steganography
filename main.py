@@ -5,7 +5,7 @@ import engine # Ensure engine.py is in the same folder
 class SteganoApp(ctk.CTk):
     def __init__(self):
         super().__init__()
-        self.title("CyberSteg - SLIIT Project")
+        self.title("CyberSteg")
         self.geometry("600x600")
         self.selected_path = None
 
@@ -28,7 +28,7 @@ class SteganoApp(ctk.CTk):
         self.key_hide = ctk.CTkEntry(self.tab_hide, placeholder_text="Enter Secret Key", show="*", width=300)
         self.key_hide.pack(pady=10)
         self.msg_hide = ctk.CTkTextbox(self.tab_hide, height=150, width=400)
-        self.msg_hide.insert("0.0", "Message...")
+        self.msg_hide.insert("0.0", "")
         self.msg_hide.pack(pady=10)
         ctk.CTkButton(self.tab_hide, text="Hide & Save", fg_color="green", command=self.run_hide).pack(pady=20)
 
